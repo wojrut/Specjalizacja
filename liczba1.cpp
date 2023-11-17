@@ -10,19 +10,19 @@ int main()
     cout << "Podaj liczbę: \n";
     int a;
     cin >> a;
-    int sumaDzielników = 0;
+    int licznik = 0;
     
     for (int i = 1; i < a; i++) {
         if (a % i == 0) {
-            sumaDzielników = sumaDzielników + i;
+            licznik++;
         }
     }
 
-    if (sumaDzielników == a) {
-        cout << "Podana liczba jest liczbą doskonałą";
+    if (licznik == 2) {
+        cout << "Podana liczba jest liczbą pierwszą";
     }
     else {
-        cout << "Podana liczba nie jest liczbą doskonałą";
+        cout << "Podana liczba nie jest liczbą pierwszą";
     }
 }
 
